@@ -1,11 +1,124 @@
-.App {
+/* .App {
   text-align: center;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+} */
+
+
+.app{
+  display: flex;
 }
+
+.todoListTop{
+  display: flex;
+  background-color: white;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+
+.list{
+  display: flex;
+  background-color: darkorange;
+  width: auto;
+  height: auto;
+  padding-right: 10px;
+  box-sizing: border-box;
+
+}
+
+.head{
+  font-size: 20px;
+  color: black;
+  font-weight: 400px;
+}
+
+.parts{
+  display: grid;
+}
+
+.display{
+  margin-top: 20px;
+  display: flex;
+  background-color: chartreuse;
+  flex-direction: column;
+}
+
+.val{
+  width: auto;
+  height: 50px;
+  border-radius: 10px;
+  background-color: bisque;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  /* display: flex; */
+}
+
+.textArea{
+  width:auto;
+  height: 40px;
+  border-radius: 10px;
+  border-color: black;
+}
+
+.textForm{
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+.add{
+  display: flex;
+  /* flex-direction: column; */
+  gap:40px;
+  margin-right: 50px;
+  background-color: darkkhaki;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  
+
+}
+
+
+.ht{
+  width:100px;
+  height: 20px;
+  border-radius: 30px;
+  background-color:darkorange ;
+  color: white;
+}
+
+.bt{
+  width:100px;
+  height: 20px;
+  border-radius: 30px;
+  background-color: darkgreen;
+  color: white;
+}
+
+.lowerDiv{
+  padding-top: 30px;
+  display: flex;
+  /* flex-direction: column; */
+ justify-content: space-around;
+}
+
+.box{
+  display: flex;
+  /* flex-direction: column; */
+}
+
+.spar{
+  display: flex;
+  flex-direction: column;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -26,6 +139,13 @@
 
 .App-link {
   color: #61dafb;
+}
+
+@media screen and (max-width: 640px) {
+.app{
+  display: flex;
+  flex-direction: column;
+}
 }
 
 @keyframes App-logo-spin {
