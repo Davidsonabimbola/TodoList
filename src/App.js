@@ -1,7 +1,7 @@
 
 import './App.css';
 import Form from 'react-bootstrap/Form';
-import {Alert, Button} from 'react-bootstrap'
+import {Button} from 'react-bootstrap'
 import { useState } from 'react';
 
 
@@ -122,11 +122,13 @@ const todo = {
     }
 
     if (isNaN(parseInt(st))) {
-  alert("Please input an integer for Start Time");
+      return;
+  // ("Please input an integer for Start Time");
 }
 
 if (isNaN(parseInt(et))) {
-  alert("Please input an integer for End Time");
+  return;
+  // ("Please input an integer for End Time");
 }
 
      added(todo)
